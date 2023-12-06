@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
@@ -11,11 +12,8 @@ int main()
     int a, b, v;
     cin >> a >> b >> v;
 
-    int result = a, day = 1;
-    while (result < v) {
-        ++day;
-        result += (a - b);
-    }
+    int day = 0;
+    day = ceil((double) (v - a) / (a - b)) + 1;
 
     cout << day << "\n";
 }
