@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    // 배수와 약수
     ios::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
